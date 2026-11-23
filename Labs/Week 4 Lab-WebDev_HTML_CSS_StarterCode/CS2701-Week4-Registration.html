@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>
-            Fresh Food For All
-        </title>
-        <link rel="stylesheet" href="CS2701-Week4-Registration.css">
-    </head>
+    <title>
+        Fresh Food For All
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CS2701-Week4-Registration.css">
+</head>
     <body>
         <header></header>
         <nav>
@@ -14,6 +17,10 @@
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+             <li><a href="#">Home</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Help</a></li>   
             </ul>
          </nav>
         <main>
@@ -22,17 +29,35 @@
             </aside>
             <section>
                 <form class="center" novalidate>
-                <!-- ToDo: Implement the form containing 
-                           Name - type text
-                           email- type text
-                           password - type text
-                           Terms of Service - type checkbox
-                           Register - button
-                           Learn more - link
-                           Check lecture slides and the links on the slides to learn about forms
-                           and how to create a button that would react to a click Event
-                        -->
-                    <!-- Example given for user type checkboxes-->
+               
+<!-- Name -->
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+<br><br>
+
+<!-- Email -->
+<label for="email">Email:</label>
+<input type="text" id="email" name="email">
+<br><br>
+
+<!-- Password -->
+<label for="password">Password:</label>
+<input type="text" id="password" name="password">
+<br><br>
+
+<!-- Terms of Service -->
+<input type="checkbox" id="terms" name="terms">
+<label for="terms">I agree to the Terms of Service</label>
+<br><br>
+
+<!-- Register button -->
+<button type="button">Register</button>
+<br><br>
+
+<!-- Learn more link -->
+<a href="#">Learn more</a>
+<br><br>
+
                     
                     <input type="checkbox" id="buyer" name="buyer" value="buyer">
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
